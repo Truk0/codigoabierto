@@ -1,0 +1,389 @@
+BANCO BASE – PROYECTO ESTRATEGIA DE CRÉDITO (MERCADO ESTRATÉGICO)
+CONSOLIDADO AS-IS (criterios, procesos, gobierno y garantías)
+Fecha de elaboración: 03-feb-2026
+Versión: 0.1 (consolidado inicial con base en documentación adjunta)
+
+1. CONTEXTO Y OBJETIVO
+El presente documento consolida la información disponible del estado actual (AS-IS) de los criterios
+mínimos de admisión, metodologías de análisis, segmentación de mercado, gobierno (comités/facultades),
+proceso operativo de admisión y marco de garantías. Este insumo constituye el “punto de partida” para
+la reconfiguración de un modelo de crédito para Mercado Estratégico con visión FAST, apoyado en
+herramientas analíticas y alineado a la visión corporativa.
+
+2. FUENTES DOCUMENTALES CONSOLIDADAS
+2.1. Comités y Facultades (documento Word).
+2.2. Criterios Mínimos de Admisión y Análisis de Crédito (documento Word y archivo Excel).
+2.3. Modelos Semi-paramétricos y Paramétricos: FX Loan 300 y CrediBase (documento Word).
+2.4. Mercado Objetivo y Mercado Estratégico (documento Word).
+2.5. Estrategia de Crédito – Garantías (archivo Excel).
+
+3. GOBIERNO DE CRÉDITO: COMITÉS, QUÓRUM Y ALCANCE
+3.1. Comité Directivo de Crédito Ampliado (CDCA)
+- Naturaleza: instancia de más alto rango para autorizaciones.
+- Quórum: al menos 3 miembros, de los cuales 2 deben ser externos.
+- Umbral señalado: autorizaciones de riesgo por montos mayores a 300 mdp.
+- Observación operativa: se indica que el CDCA es “casi el Ampliado”, con adición de un integrante
+  (Ing. Gerardo Coindreau Farías) en sustitución de un miembro mencionado.
+
+3.2. Comité Directivo de Crédito (CDC)
+- Naturaleza: instancia de autorización para riesgos por debajo del umbral máximo del CDCA.
+- Quórum: al menos 3 miembros, donde 1 debe ser de Crédito.
+
+3.3. Productos cubiertos por el marco de comités/facultades
+- Productos Bancarios: Crédito Simple, Crédito en Cuenta Corriente, Factoraje, CCI y PQ.
+- Productos Cambiarios: FX Loan y Derivados.
+
+4. FACULTADES MANCOMUNADAS (AS-IS)
+4.1. Facultades por mercado y monto (productos bancarios)
+a) Segmento por mercado
+- Mercado No Estratégico
+- Mercado Estratégico
+
+b) Umbrales y consideraciones (riesgo grupo económico)
+- Hasta 6 mdp o su equivalente en USD (Mercado No Estratégico).
+- Hasta 10 mdp o su equivalente en USD (Mercado Estratégico).
+- Hasta 10 mdp o su equivalente en USD en recalificaciones de línea (ambos mercados, según tabla).
+
+c) Umbral adicional (casos específicos)
+- Hasta 15 mdp o su equivalente en USD (riesgo grupo) con nota: “solo para casos semiparamétricos”.
+
+d) Observaciones sobre facultados
+El documento lista nombres de funcionarios facultados para operación mancomunada; la lista completa
+se conserva como parte del soporte documental del proyecto.
+
+4.2. Relación con metodologías
+Se reconoce que, adicionalmente al proceso tradicional, operan metodologías:
+- CrediBase (referencia para clientes).
+- Easy Credit (opera para LCD; autorizaciones por mancomunadas).
+- Semiparamétricos (autorizaciones por mancomunadas).
+
+5. SEGMENTACIÓN: MERCADO OBJETIVO (MO) Y MERCADO ESTRATÉGICO
+5.1. Mercado Objetivo (MO)
+- Definición: comunicado del 29 de abril de 2021 (firmado por Director de Crédito).
+- Clasificación por actividad económica: MO, Mercado No Objetivo (MNO), Fuera de Mercado Objetivo (FMO),
+  y Actividades No Susceptibles de Apoyo (NSA).
+
+Lineamientos operativos relevantes del MO:
+- Prospección en crédito tradicional y arrendamiento enfocada a plazas con Banquero de Relación Empresarial.
+  Excepciones requieren Vo.Bo. del Director Territorial.
+- Construcción: se atiende Edificación (solo vivienda media y residencial), con tope de proyecto hasta 150 mdp
+  en Monterrey, CDMX y Guadalajara. Proyectos fuera de plazas o montos mayores se presentan a primera vista
+  en CDCA para definir factibilidad. No se atiende vivienda económica ni construcción dependiente de recursos
+  del sector público.
+- Agroindustrial: se atienden actividades del sector primario alineadas a lineamientos del anexo de Agronegocios,
+  con solicitudes hasta 60 mdp en plazas definidas (p.ej. Querétaro, Jalisco, Aguascalientes, SLP, Zamora Michoacán
+  y zonas cercanas). Fuera de estas plazas o montos mayores se presentan a primera vista en CDCA.
+- Para toma de riesgo: mínimo 3 años de operación en actividad principal.
+- Ventas mínimas: 120 mdp (general) o 250 mdp (Dirección Territorial México) en el último ejercicio anual, ya sea
+  individual o en grupo económico.
+
+Actividades NSA (no susceptibles de apoyo): el documento enumera una lista específica (p.ej. transmisores de dinero,
+centros cambiarios, casinos, prestamistas, casas de empeño, partidos políticos, entre otras). En general, se establece
+que no son atendibles independientemente del sector/subsector.
+
+Actividades FMO (fuera del MO) y tratamiento:
+- Se listan actividades que solo podrán atenderse de forma excepcional.
+- Autorización inicial e incrementos: facultad de CDCA.
+- Recalificaciones: CDCMX o CDC según la plaza.
+
+Excepciones:
+- Se consideran excepciones cuando exista un negocio atractivo y el riesgo esté acotado por situación financiera y
+  calidad moral, o exista fuente alterna de pago de calidad, con Vo.Bo. territorial/comercial y resolución mínima en CDC
+  o CDCA según riesgo.
+- Lineamientos no aplican para: (i) líneas con fuente de pago inmediata (garantía líquida) mínima 1.05 a 1;
+  (ii) recalificaciones/incrementos de empresas NSA o FMO previamente aprobadas, salvo deterioro que comprometa recuperación.
+
+5.2. Mercado Estratégico
+Se considera Mercado Estratégico a empresas que participan directa o indirectamente del comercio exterior
+(importadoras/exportadoras) u otras intensivas en el uso de divisas.
+
+Criterios de elegibilidad (se señalan como requisitos):
+- Exportación directa o indirecta anual >= 20% de ingresos netos anuales, o
+- Importación directa >= 20% de compras netas anuales, y/o
+- Volumen de cambios mensual preferente >= 300,000 USD.
+- Se admite incluir empresas con ingresos/costos en moneda extranjera bajo los mismos criterios.
+
+Proceso de validación:
+- La propuesta se integra con datos recabados por el área comercial en visita ocular y documentación soporte
+  del cliente; posteriormente es validada por el área de análisis de crédito.
+
+Restricción explícita:
+- No es factible otorgar financiamiento a empresas que no cumplan con requisitos de Mercado Estratégico.
+
+6. METODOLOGÍAS Y MODELOS DE ANÁLISIS (AS-IS)
+6.1. Proceso Tradicional
+- Enfoque: revisión de indicadores/razones financieras (revisables; sin parámetros establecidos).
+- Capacidad de pago: se menciona DSCR; si DSCR > 1, se presume capacidad aceptable (otros indicadores revisables).
+
+6.2. Proceso Semi-paramétrico
+- Parámetros de entrada:
+  - Capital Contable Positivo.
+  - Sin Quiebra Técnica (pérdida de 2/3 del capital social).
+- Parámetros revisables:
+  - Calidad de información financiera: dictaminada y/o interna con declaración fiscal (cumple); interna sin declaración (no cumple).
+  - Indicadores financieros: calificación ponderada de liquidez, deuda y capacidad de pago con base en último cierre.
+- Criterio de aprobación: calificación ponderada al último cierre > 0.7 (cumple).
+
+6.3. Easy Credit (aplica hoy para LCD)
+- Estructura de score ponderado:
+  - Razones Financieras (40%): calificación ponderada de liquidez, deuda y capacidad de pago.
+    Parámetros: Ácido (35%), Apalancamiento (10%), Cobertura de Intereses (10%), Horizonte de Deuda (10%),
+    Capacidad de Pago (35%).
+  - Razonabilidad de cobertura (25%): congruencia de la línea (100%).
+  - (Se reconoce que la calificación ponderada total es la suma de componentes).
+- Criterio de aprobación: calificación ponderada total > 5.
+
+6.4. CrediBase (modelo paramétrico)
+- Objetivo: programa de colocación de crédito hasta 15 mdp, con clientes definidos por un modelo analítico de ciencia de datos,
+  con línea global que cubre 4 productos (Cuenta Corriente, Factoraje, Carta de Crédito y FX Loan); proceso ágil con alta tasa de éxito.
+- Requisitos mínimos (resumen):
+  - Mercado Objetivo (definido con análisis de crecimiento económico; se menciona INEGI como insumo).
+  - Ventas: 120 mdp (resto) y 240 mdp (CDMX).
+  - Antigüedad: al menos 2 años.
+  - Operaciones LDD/SPOT/TN en el último año.
+  - Operaciones en cambios: 1 millón de USD y al menos 20 movimientos en el año.
+  - Clientes nuevos (sin línea autorizada de crédito o derivados).
+  - Obligación Solidaria (OS) 3 a 1.
+- Esquema de disposiciones:
+  - Se puede distribuir en combinación libre de productos sin superar máximos.
+  - FX Loan limitado al monto promedio transaccional de LDD del cliente.
+- Modelo de riesgo (componentes):
+  - SCORE PROSPECTOR.
+  - Estimación de calificación externa: Buró de Crédito.
+  - Estimación de calificación interna: información interna de cambios.
+  - Estimación de calificación financiera: 10 razones financieras.
+- Modelo de capacidad de pago:
+  - Información de balance en EEFF, tabla de pasivos, créditos activos en Buró de Crédito.
+- Workflow:
+  - Carga de prospectos en Salesforce.
+  - Solicitud de Buró de Crédito.
+  - Solicitudes a través de OnBase.
+- Vigencia/recalificación: anual.
+
+6.5. FX Loan 300 (documentado como programa específico)
+- Objetivo: colocación de líneas FX Loan con tope “hasta por USD 300” (la unidad exacta del tope requiere validación por consistencia documental).
+- Requisitos: se señala alineación a semiparamétrico; 3 años constituido; ventas mínimas reportadas como 70 mdp (y existe una referencia
+  adicional de 70,000 MN en el documento, por lo que se sugiere validar consistencia).
+- Regla de disposición: FX Loan hasta 15 días naturales bajo semiparamétrico; para disponer a más de 15 días se requiere firma de CDC.
+- Workflow: proceso OnBase.
+- Vigencia/recalificación: anual.
+- Nota de garantías: se menciona seguridad mínima 2 a 1 en el documento de FX Loan 300.
+
+7. CRITERIOS MÍNIMOS DE ADMISIÓN (AS-IS) – RESUMEN CONSOLIDADO POR CRITERIO
+El documento de criterios compara Proceso Tradicional, Semi-paramétrico, Easy Credit y CrediBase. A continuación,
+se consolidan los elementos comunes y los diferenciadores principales.
+
+7.1. Nivel de ventas
+- Tradicional: a partir de 120 mdp (250 mdp en CDMX).
+- Semi-paramétrico: a partir de 70 mdp (FX Loan) o 120 mdp (Derivados).
+- Easy Credit: a partir de 70 mdp (no aplicable a construcción o empresas por proyectos).
+- CrediBase: ventas 240 mdp (CDMX) y resto a partir de 120 mdp.
+
+7.2. Antigüedad
+- Tradicional: 3 años.
+- Semi-paramétrico: 5 años.
+- Easy Credit: 3 años.
+- CrediBase: 2 años.
+
+7.3. Precalificación interna (metodología de cartera)
+- Se requiere calificación mínima B2 para los tres primeros procesos (Tradicional, Semi-paramétrico y Easy Credit).
+
+7.4. Buró de crédito (calificación y condiciones)
+- Tradicional: revisable; referencia “a partir de B3” (no limitativo).
+- Semi-paramétrico (parámetros de entrada): buró saludable (atrasos activos <= 5%); sin claves de prevención/observación
+  en solicitante y/o accionistas.
+  Parámetro revisable: calificación interna de buró; mínimo “Regular A” para cumplir.
+- Easy Credit (componente): representa 35% de calificación ponderada total; considera histórico de pagos, mora actual,
+  mora comercial/fiscal, claves de observación y prevención, score solicitante (PF cuando aplique).
+  Condiciones cuantitativas: no contar con vencimientos actuales a partir del 10% de créditos vigentes; porcentaje de créditos vencidos
+  no mayor a 5%. La calificación final se toma como la más baja entre categorías internas.
+- CrediBase: se menciona consulta de Score Prospector (>= 280) y calificación interna basada en variables de buró (según documento).
+
+7.5. Buró y dictamen legal
+- Tradicional: no tener juicios mercantiles como demandado en los últimos 10 años.
+- Semi-paramétrico: sin juicios mercantiles (sin plazo explícito; se indica criterio del analista).
+- Easy Credit: no considera parámetro de buró legal (según documento).
+
+7.6. Solicitud de estados financieros (EEFF)
+Aplica a clientes/acreditados y obligados solidarios (PM y/o PFAE):
+- Dos cierres y un parcial no mayor a 6 meses (preferentemente dictaminados; en su caso internos).
+- EEFF parcial comparativo contra año anterior.
+- Incluir: balance general, estado de resultados y analíticas de principales cuentas de balance.
+
+7.7. Análisis financiero
+- Tradicional: revisión de indicadores sin parámetros fijos; DSCR > 1 se interpreta como capacidad aceptable.
+- Semi-paramétrico: calificación ponderada de liquidez, deuda y capacidad de pago; umbral de aprobación > 0.7.
+- Easy Credit: score con ponderaciones descritas; aprobación > 5.
+- CrediBase: componente de razones financieras representa 45% y considera 10 razones financieras (liquidez, deuda y capacidad de pago).
+
+7.8. Documentación mínima para expediente regulatorio
+- Tradicional y Semi-paramétrico: según checklist de OnBase / Manual de Crédito.
+- Documentación adicional requerida por Crédito (cuando aplique): buró legal, tabla de pasivos financieros, resumen ejecutivo firmado por Comercial.
+- Easy Credit / Derivados (según documento): para acreditado: EEFF, buró, dictamen jurídico, perfil de cliente de derivados (Comercial),
+  relación de propiedades; para garantes: EEFF y/o relación patrimonial, buró y dictamen jurídico (si aplica).
+
+7.9. Comisiones y tasas
+Definidas conforme a política vigente; variables mencionadas:
+- Nivel de ventas anuales, tipo de crédito, plazo, condiciones especiales (p.ej. periodo de gracia, pago bullet),
+  sector estratégico del cliente y calificación de cartera.
+
+7.10. Verificaciones de propiedad y sociedad (garantías y seguridad)
+- Tradicional (propiedad libre de gravamen, si no hay garantía especial):
+  - Prospecto: seguridad mínima 3 a 1.
+  - Cliente actual: seguridad mínima 2 a 1.
+  - Vigencia de verificación: 4 meses.
+  - En caso de embargo: aclaración indispensable.
+- Semi-paramétrico:
+  - Seguridad mínima 1 a 1; el modelo puede recomendar aforos distintos según calificación global ponderada.
+- Easy Credit:
+  - Propiedad: igual o mayor al aforo sugerido por el modelo.
+  - Sociedad: N/A (según documento).
+- Sociedad (revisable):
+  - Vigencia: 1 año.
+  - En caso de embargo: aclaración indispensable.
+  - No se establece parámetro fijo; el estatus es revisable.
+
+7.11. PLD/KYC
+- PLD: pendiente.
+- KYC: “conocer quién está detrás del grupo (propietario real)”.
+
+7.12. Referencias de consejeros
+- Prospectos: contar con referencias positivas de consejeros de plaza.
+- Para otros procesos: se señala “pendiente” o “no se solicitan” según comparativo.
+
+7.13. SARAS
+- Se menciona como rubro, sin contenido operativo detallado en el documento.
+
+7.14. Dictamen de Agronegocios y operación con FIRA
+- Aplicable a empresas con actividades relacionadas con actividad primaria.
+- Se enlistan requisitos y documentación para operar con FIRA:
+  - Correo de Vo.Bo. del área de Seguimiento.
+  - Documentos: opinión agro o dictamen técnico; DTU y padrón de acreditados; documentación del acreditado y OS;
+    formato de buró FIRA; confirmación de clausulado FIRA en contrato (Jurídico/Especialista).
+  - Adicionales: póliza y polígonos georreferenciados (actividad primaria); formulario (programa especial rural);
+    reporte de visita posterior a ministración (renovaciones); correo de autorización de Tesorería (fondeo FIRA).
+- Consideraciones:
+  - Monto máximo a garantizar con FIRA: hasta 50 millones de UDI’s por acreditado o grupo de riesgo común (sujeto a disponibilidad).
+  - Servicio de garantía FIRA no aplica para líneas FX, LCD y arrendamiento.
+  - Para menor costo FEGA (programa “Grandes Empresas”): monto mínimo 4 millones de UDI’s y PD < 2%.
+- Se menciona anexo de actividades por clave SCIAN Banxico para opinión sectorial/dictamen agropecuario.
+
+7.15. Condiciones de garantía BANCOMEXT (resumen)
+Se presenta un cuadro comparativo (Programa T-MEC vs Programa Plan México) con:
+- Participación en riesgo: 60% (T-MEC) y 70% (Plan México).
+- Comisión de fondo: 2.8% vs 2.21% sobre saldo garantizado.
+- Beneficiarios: Pymes y grandes (T-MEC) vs Pymes (Plan México).
+- Destino: capital de trabajo y activo fijo.
+- Tipo de financiamiento: ACC y ACS (T-MEC) vs ACS (Plan México).
+- Monto: hasta 30 mdp o equivalente en USD (ambos).
+- Plazo: ACC hasta 3 años; ACS hasta 5 años (T-MEC). ACS hasta 5 años (Plan México).
+- Tasas (referenciales) y comisiones IF (hasta 1.5% o sin comisión, según programa).
+- Colaterales: obligación solidaria y/o garantías reales (prendas e hipotecas).
+- Buró: hasta MOP04 en cuentas abiertas; si mayor, justificar con comprobante/aclaración.
+- Comprobación documental: evidencia de importación/exportación y, para sectores específicos, evidencia de relación
+  de proveeduría y carta declaratoria firmada.
+
+8. ESTRATEGIA DE GARANTÍAS (AS-IS) – TIPOS, REQUISITOS Y AFOROS REFERENCIALES
+El archivo “Estrategia de crédito – Garantías” describe un catálogo de garantías con: objetivo, marco legal,
+política, tipos aceptados, requisitos, valuación/aforo y operación/seguimiento. A continuación, se presenta
+un resumen ejecutivo por tipo. Nota: se indica explícitamente que los aforos son referenciales y el órgano
+facultado puede ajustarlos.
+
+8.1. Garantía Hipotecaria
+- Aceptada: inmuebles, aeronaves, embarcaciones.
+- Formalización: escritura pública e inscripción registral.
+- Valuación: avalúo por perito autorizado; actualización cada 3 años (revolventes).
+- Seguimiento: póliza de daños con endoso preferente.
+- Aforo referencial (tradicional): 1.5 (ideal 2.0).
+
+8.2. Hipotecaria sobre la Unidad Industrial
+- Aceptada: unidad industrial (bienes muebles e inmuebles, concesión, etc.).
+- Formalización: escritura pública e inscripción; incluye concesión/autorización.
+- Aforo referencial (tradicional): 1.5 (ideal 2.0).
+
+8.3. Prendaria de Bienes Muebles
+- Aceptada: bienes muebles y documentos mercantiles.
+- Formalización: puede requerir intervención jurídica; póliza de daños y endoso preferente cuando aplique.
+- Aforo referencial (tradicional): 1.25.
+
+8.4. Certificado de Depósito y Bono de Prenda
+- Aceptada: títulos de almacenes generales (CD y bono de prenda).
+- Requisito: endoso; el valor lo ampara el certificado.
+- Operación: no aplica seguimiento adicional en la tabla.
+
+8.5. Colateral
+- Aceptada: títulos de crédito (letras de cambio, pagarés y otros documentos).
+- Requisito: entrega y endoso en garantía.
+- Valuación: por valor nominal/mercado (según instrumento).
+
+8.6. Prenda Bursátil
+- Aceptada: títulos de valores.
+- Formalización: contrato; debe constar por escrito.
+
+8.7. Fideicomiso
+- Aceptada: patrimonio fideicomitido (efectivo, inmuebles, muebles, cuentas, etc.).
+- Requisito: Banco Base como fideicomisario en primer lugar y grado.
+- Aforo referencial (tradicional): 1.5 (ideal 2.0).
+
+8.8. Mandato Irrevocable
+- Aceptada: depósito de dinero o inversión en la propia institución.
+- Formalización: carta mandato.
+- Aforo: pendiente en tabla.
+
+8.9. Carta Garantía
+- Aceptada: compromiso de pago de empresa extranjera.
+- Requisito: revisión por Jurídico; sujeta a usos/leyes aplicables.
+
+8.10. Stand by o Garantía Recibida a favor de Banco Base
+- Aceptada: stand by / garantía / contragarantía.
+- Requisito: bancos corresponsales emisores con requisitos; vencimientos deben ser adecuados.
+- Aforo referencial (tradicional): 1.05.
+
+8.11. Aval
+- Aceptada: firma del avalista en título de crédito u hoja adherida; solvencia moral/económica.
+- Aforo referencial (tradicional): 3 a 1 (sujeto a revisión).
+
+8.12. Fondos de Fomento o Banca de Desarrollo
+- Aceptada: programas de garantías del Gobierno Federal.
+- Requisito: apego a reglamentos operativos; inscripción cuando aplique.
+- Cobertura referencial: se menciona 60% BANCOMEXT y 40%/50% FIRA (referencial).
+
+8.13. Obligación Solidaria y/o Fianza Solidaria
+- Formalización: contrato; solvencia moral/económica.
+- Aforo referencial (tradicional): 3 a 1 (sujeto a revisión).
+
+8.14. Fianza
+- Aceptada: fianzas de instituciones afianzadoras.
+- Política: se aceptan exclusivamente para ciertos supuestos (pago de principal/intereses, según tabla).
+- Seguimiento: restricciones de retroactividad y vigilancia.
+
+9. WORKFLOW OPERATIVO DE ADMISIÓN (SÍNTESIS)
+A nivel general, el proceso de admisión y análisis integra:
+- Prospección / captura comercial (se menciona Salesforce en CrediBase).
+- Integración de expediente y checklist regulatorio (OnBase).
+- Consulta de Buró de Crédito (y, cuando aplica, buró legal).
+- Evaluación según metodología (tradicional / semiparamétrico / Easy / CrediBase).
+- Presentación a instancia facultada (mancomunadas / CDC / CDCA según riesgo).
+- Vigencia y recalificación anual.
+
+10. PRINCIPALES OBSERVACIONES (BRECHAS Y CONSISTENCIA)
+10.1. Atomización del marco AS-IS
+Existen múltiples metodologías con umbrales y reglas distintas, lo que dificulta la estandarización del
+lenguaje de riesgo y la automatización del proceso.
+
+10.2. Puntos que requieren validación por consistencia
+- “FX Loan 300”: el tope se documenta como “hasta por USD 300” y aparecen referencias de ventas mínimas
+  tanto en 70 mdp como en 70,000 MN; se sugiere validar el dato oficial.
+- Aforos y niveles de seguridad: se señalan como referenciales y no obligatorios en manual actual; se requiere
+  definir criterios normativos para el rediseño FAST.
+
+10.3. Pendientes explícitos en la documentación
+- PLD: “pendiente”.
+- SARAS: sin contenido operativo detallado.
+
+11. SALIDA ESPERADA DEL SIGUIENTE PASO (NO CONTENIDO EN ESTE CONSOLIDADO)
+Definir el marco TO-BE con visión FAST: segmentación analítica, criterios únicos de admisión, gobierno
+de excepciones, arquitectura de modelos (riesgo y capacidad de pago), integración tecnológica (Salesforce/OnBase/Buró)
+y lineamientos de garantías alineados a score y apetito de riesgo.
+
+FIN DEL DOCUMENTO
