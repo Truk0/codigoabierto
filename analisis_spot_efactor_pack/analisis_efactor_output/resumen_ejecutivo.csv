@@ -1,0 +1,15 @@
+indicador,valor
+Periodo analizado,2024-04-15 a 2026-04-08
+Operaciones spot analizadas,7200
+Días activos,306
+Volumen bruto USD,30393985146.986286
+Neto final USD,15946188.286605313
+Neto/Bruto,0.0005246494728969905
+% días con compra y venta mismo día,0.8496732026143791
+% días con neto diario <10% del bruto,0.3758169934640523
+% volumen emparejado cerrado mismo día,0.5717568873617
+% volumen emparejado cerrado <=1 día,0.8505202091604673
+% volumen emparejado cerrado <=5 días,0.9780925116422895
+P&L implícito total de round-trips (MXN),-160103580.23649415
+Win rate round-trips,0.4689587973273942
+Hit rate direccional a siguiente día,0.4777327935222672
