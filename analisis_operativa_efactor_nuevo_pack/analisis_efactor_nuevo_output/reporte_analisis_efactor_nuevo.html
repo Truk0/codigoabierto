@@ -1,0 +1,247 @@
+
+<html><head><meta charset="utf-8"><title>Análisis E-Factor</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 28px; color: #222; line-height: 1.4; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0 24px 0; }
+th, td { border: 1px solid #ccc; padding: 6px 8px; text-align: right; }
+th:first-child, td:first-child { text-align: left; }
+img { max-width: 100%; margin: 10px 0 28px 0; border: 1px solid #ddd; }
+.note { background:#f5f5f5; padding:12px; border-left:4px solid #888; }
+</style></head><body>
+<h1>Análisis de la operativa de E-Factor</h1>
+<div class="note">Se analizaron solo las operaciones <b>C</b> y <b>V</b> (7,173 registros). Las 217 operaciones CCY se excluyeron del análisis de apertura/cierre.</div>
+<h2>Conclusiones ejecutivas</h2>
+<ul>
+<li>La operativa está altamente concentrada entre <b>13:00 y 15:59</b>: 60.8% de las operaciones C/V. La hora 14:00 por sí sola representa 34.7%.</li>
+<li>La <b>madrugada no es el horario dominante</b>: entre 00:00 y 05:59 ocurre 1.6% de las operaciones y 1.0% del volumen MXN, en 22 días.</li>
+<li>La mecánica de <b>abrir una pierna hoy y la contraria a plazo</b> es muy frecuente: 1,602 pares exactos en 75.1% de los días operados.</li>
+<li>La sospecha específica de <b>comprar a plazo y vender el mismo día</b> sí aparece: 0 casos exactos, por USD 0, en 0 días.</li>
+<li>La variante más frecuente es la inversa, <b>comprar hoy y vender a plazo</b>: 0 casos exactos, por USD 0, en 0 días.</li>
+<li>La posición abierta estimada rebasa el umbral de <b>30 mdp</b> en 216 de 302 días si se mide por neto, y en 227 días si se mira la exposición bruta.</li>
+</ul>
+<h2>Indicadores clave</h2>
+<table>
+<tr><th>Métrica</th><th>Valor</th></tr>
+<tr><td>Periodo</td><td>2024-04-29 a 2026-04-08</td></tr>
+<tr><td>Días con operación C/V</td><td>305</td></tr>
+<tr><td>% operaciones 14:00</td><td>34.7%</td></tr>
+<tr><td>% operaciones 13:00-15:59</td><td>60.8%</td></tr>
+<tr><td>% operaciones 00:00-05:59</td><td>1.6%</td></tr>
+<tr><td>Casos exactos compra a plazo y venta hoy</td><td>0</td></tr>
+<tr><td>USD compra a plazo y venta hoy</td><td>0</td></tr>
+<tr><td>Casos exactos compra hoy y venta a plazo</td><td>0</td></tr>
+<tr><td>USD compra hoy y venta a plazo</td><td>0</td></tr>
+<tr><td>Máxima posición neta estimada</td><td>2.08 bn MXN</td></tr>
+<tr><td>Máxima posición bruta estimada</td><td>3.00 bn MXN</td></tr>
+</table>
+<h2>1. Horarios de operación</h2><img src="01_horas_operacion.png" />
+<h2>2. Frecuencia mensual en madrugada</h2><img src="02_madrugada_mensual.png" />
+<h2>3. Operativa puente exacta por tipo y plazo</h2><img src="03_puentes_tipo_plazo.png" />
+<h2>4. Posición abierta estimada vs límite de 30 mdp</h2><img src="04_posicion_abierta_vs_limite.png" />
+<h2>5. Frecuencia diaria del patrón sospechoso</h2><img src="05_patron_diario_usd.png" />
+<h2>Fechas con más operativa en madrugada</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>fecha_operacion_dt</th>
+      <th>operaciones</th>
+      <th>volumen_mxn</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2026-03-17</td>
+      <td>15</td>
+      <td>762430000.0</td>
+    </tr>
+    <tr>
+      <td>2025-02-04</td>
+      <td>12</td>
+      <td>821349000.0</td>
+    </tr>
+    <tr>
+      <td>2025-04-21</td>
+      <td>12</td>
+      <td>692576000.0</td>
+    </tr>
+    <tr>
+      <td>2024-10-02</td>
+      <td>10</td>
+      <td>472214000.0</td>
+    </tr>
+    <tr>
+      <td>2024-11-06</td>
+      <td>10</td>
+      <td>425745000.0</td>
+    </tr>
+    <tr>
+      <td>2024-09-17</td>
+      <td>9</td>
+      <td>443887000.0</td>
+    </tr>
+    <tr>
+      <td>2026-03-23</td>
+      <td>8</td>
+      <td>427356000.0</td>
+    </tr>
+    <tr>
+      <td>2025-02-10</td>
+      <td>6</td>
+      <td>308975000.0</td>
+    </tr>
+    <tr>
+      <td>2025-05-02</td>
+      <td>6</td>
+      <td>294248000.0</td>
+    </tr>
+    <tr>
+      <td>2024-05-02</td>
+      <td>4</td>
+      <td>169581000.0</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Fechas con mayor posición abierta neta estimada</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>date</th>
+      <th>net_mxn</th>
+      <th>gross_mxn</th>
+      <th>pairs_active</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025-03-05</td>
+      <td>2081791000.0</td>
+      <td>2902003000.0</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>2025-01-07</td>
+      <td>1703846000.0</td>
+      <td>1703846000.0</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>2025-01-30</td>
+      <td>1653355000.0</td>
+      <td>1858775000.0</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>2025-01-02</td>
+      <td>1395891000.0</td>
+      <td>1599611000.0</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>2025-04-22</td>
+      <td>1371641000.0</td>
+      <td>1371641000.0</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>2025-01-21</td>
+      <td>1245700000.0</td>
+      <td>1245700000.0</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>2024-06-21</td>
+      <td>1102075000.0</td>
+      <td>1102075000.0</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>2025-01-06</td>
+      <td>1054579000.0</td>
+      <td>1054579000.0</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>2025-01-14</td>
+      <td>1040494000.0</td>
+      <td>1450066000.0</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>2025-03-25</td>
+      <td>1010061000.0</td>
+      <td>1411301000.0</td>
+      <td>14</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Fechas con mayor posición abierta bruta estimada</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>date</th>
+      <th>net_mxn</th>
+      <th>gross_mxn</th>
+      <th>pairs_active</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025-01-09</td>
+      <td>-131361000.0</td>
+      <td>2997555000.0</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>2025-03-05</td>
+      <td>2081791000.0</td>
+      <td>2902003000.0</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>2025-01-28</td>
+      <td>-79055000.0</td>
+      <td>2355045000.0</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>2025-01-10</td>
+      <td>-583670000.0</td>
+      <td>2224570000.0</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>2025-03-19</td>
+      <td>325944000.0</td>
+      <td>2037118000.0</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>2025-01-29</td>
+      <td>737220000.0</td>
+      <td>1950300000.0</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>2025-03-26</td>
+      <td>708081000.0</td>
+      <td>1911361000.0</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>2025-01-30</td>
+      <td>1653355000.0</td>
+      <td>1858775000.0</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>2025-01-07</td>
+      <td>1703846000.0</td>
+      <td>1703846000.0</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>2025-01-08</td>
+      <td>538170000.0</td>
+      <td>1636200000.0</td>
+      <td>19</td>
+    </tr>
+  </tbody>
+</table>
+</body></html>
