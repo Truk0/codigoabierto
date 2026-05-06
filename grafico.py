@@ -12,9 +12,32 @@ def graficar_utilidad_acumulada(
 ):
     data = df.copy()
 
-    # -----------------------------
-    # 1. Conversión robusta de mes
-    # -----------------------------
+    # ---------------------------------------------------
+    # 1. Limpieza robusta de nombres de columnas
+    # ---------------------------------------------------
+    data.columns = data.columns.astype(str).str.strip()
+
+    # Buscar columnas sin importar mayúsculas/minúsculas
+    columnas_lookup = {c.lower(): c for c in data.columns}
+
+    if col_mes.lower() not in columnas_lookup:
+        raise KeyError(
+            f"No encontré la columna '{col_mes}'. "
+            f"Columnas disponibles: {list(data.columns)}"
+        )
+
+    if col_utilidad.lower() not in columnas_lookup:
+        raise KeyError(
+            f"No encontré la columna '{col_utilidad}'. "
+            f"Columnas disponibles: {list(data.columns)}"
+        )
+
+    col_mes_real = columnas_lookup[col_mes.lower()]
+    col_utilidad_real = columnas_lookup[col_utilidad.lower()]
+
+    # ---------------------------------------------------
+    # 2. Conversión robusta del mes
+    # ---------------------------------------------------
     meses_es = {
         "enero": "01", "febrero": "02", "marzo": "03",
         "abril": "04", "mayo": "05", "junio": "06",
@@ -29,51 +52,50 @@ def graficar_utilidad_acumulada(
 
         texto = str(valor).strip().lower()
 
-        # Caso tipo: "Enero 2025"
+        # Caso: "Enero 2025"
         partes = texto.split()
         if len(partes) == 2 and partes[0] in meses_es:
             return pd.to_datetime(f"{partes[1]}-{meses_es[partes[0]]}-01")
 
-        # Caso fecha estándar: "2025-01-01", "01/01/2025", etc.
+        # Caso: fechas normales tipo "2025-01-01", "01/01/2025", etc.
         return pd.to_datetime(valor, errors="coerce", dayfirst=True)
 
-    data[col_mes] = data[col_mes].apply(convertir_mes)
+    data["_mes_fecha"] = data[col_mes_real].apply(convertir_mes)
 
-    if data[col_mes].isna().any():
-        raise ValueError("Hay valores de mes que no se pudieron convertir a fecha.")
+    if data["_mes_fecha"].isna().any():
+        valores_malos = data.loc[data["_mes_fecha"].isna(), col_mes_real].unique()
+        raise ValueError(
+            f"Hay valores de mes que no se pudieron convertir: {valores_malos}"
+        )
 
-    # -----------------------------
-    # 2. Agrupación mensual
-    # -----------------------------
+    data["_utilidad"] = pd.to_numeric(data[col_utilidad_real], errors="coerce").fillna(0)
+
+    # ---------------------------------------------------
+    # 3. Agrupación mensual sin pd.Grouper
+    # ---------------------------------------------------
+    data["_mes_periodo"] = data["_mes_fecha"].dt.to_period("M").dt.to_timestamp()
+
     mensual = (
         data
-        .groupby(pd.Grouper(key=col_mes, freq="MS"), as_index=False)
-        .agg(utilidad_mensual=(col_utilidad, "sum"))
-        .sort_values(col_mes)
+        .groupby("_mes_periodo", as_index=False)
+        .agg(utilidad_mensual=("_utilidad", "sum"))
+        .sort_values("_mes_periodo")
     )
 
     mensual["utilidad_acumulada"] = mensual["utilidad_mensual"].cumsum()
-    mensual["mes_texto"] = mensual[col_mes].dt.strftime("%b-%Y")
+    mensual["mes_texto"] = mensual["_mes_periodo"].dt.strftime("%b-%Y")
 
     mensual["color_barra"] = np.where(
         mensual["utilidad_mensual"] >= 0,
-        "#2E7D32",   # verde
-        "#C62828"    # rojo
+        "#2E7D32",
+        "#C62828"
     )
 
-    # -----------------------------
-    # 3. Métricas para anotaciones
-    # -----------------------------
-    utilidad_final = mensual["utilidad_acumulada"].iloc[-1]
-    mejor_mes = mensual.loc[mensual["utilidad_mensual"].idxmax()]
-    peor_mes = mensual.loc[mensual["utilidad_mensual"].idxmin()]
-
-    # -----------------------------
-    # 4. Gráfico sofisticado
-    # -----------------------------
+    # ---------------------------------------------------
+    # 4. Gráfico
+    # ---------------------------------------------------
     fig = make_subplots(specs=[[{"secondary_y": True}]])
 
-    # Barras de utilidad mensual
     fig.add_trace(
         go.Bar(
             x=mensual["mes_texto"],
@@ -89,7 +111,6 @@ def graficar_utilidad_acumulada(
         secondary_y=False
     )
 
-    # Línea de utilidad acumulada
     fig.add_trace(
         go.Scatter(
             x=mensual["mes_texto"],
@@ -108,7 +129,6 @@ def graficar_utilidad_acumulada(
         secondary_y=True
     )
 
-    # Línea horizontal en cero
     fig.add_hline(
         y=0,
         line_width=1.5,
@@ -116,7 +136,10 @@ def graficar_utilidad_acumulada(
         line_color="gray"
     )
 
-    # Anotación del cierre acumulado
+    utilidad_final = mensual["utilidad_acumulada"].iloc[-1]
+    mejor_mes = mensual.loc[mensual["utilidad_mensual"].idxmax()]
+    peor_mes = mensual.loc[mensual["utilidad_mensual"].idxmin()]
+
     fig.add_annotation(
         x=mensual["mes_texto"].iloc[-1],
         y=utilidad_final,
@@ -130,7 +153,6 @@ def graficar_utilidad_acumulada(
         borderwidth=1
     )
 
-    # Anotación mejor mes
     fig.add_annotation(
         x=mejor_mes["mes_texto"],
         y=mejor_mes["utilidad_mensual"],
@@ -144,7 +166,6 @@ def graficar_utilidad_acumulada(
         borderwidth=1
     )
 
-    # Anotación peor mes
     fig.add_annotation(
         x=peor_mes["mes_texto"],
         y=peor_mes["utilidad_mensual"],
@@ -158,7 +179,6 @@ def graficar_utilidad_acumulada(
         borderwidth=1
     )
 
-    # Diseño general
     fig.update_layout(
         title=dict(
             text=titulo,
@@ -169,7 +189,6 @@ def graficar_utilidad_acumulada(
         template="plotly_white",
         height=650,
         width=1100,
-        barmode="relative",
         hovermode="x unified",
         legend=dict(
             orientation="h",
